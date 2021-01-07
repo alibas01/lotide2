@@ -43,7 +43,7 @@ const eqObjects = function(object1, object2) {
   let keys1 = Object.keys(object1);
   let keys2 = Object.keys(object2);
   let isequal = false;
-  let isequalarr = [];
+  //let isequalarr = [];
   for (let i of keys1) {
     for (let j of keys2) {
       if (i === j) {
