@@ -1,8 +1,8 @@
 {
   "name": "@futureee/lotide",
   "version": "1.0.0",
-  "description": "a substitude of lodash library",
-  "main": "eqArrays.js",
+  "description": "a substitude of lodash library for training purposes",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
