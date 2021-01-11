@@ -1,9 +1,11 @@
-const assertEqual = function(actual, expected) {
-  console.assert(actual === expected, `${actual} !== ${expected}`);
-  if (actual === expected) {
-    console.log(`Assertion Passed: ${actual} === ${expected}`);
-  }
-};
+// const assertEqual = function(actual, expected) {
+//   console.assert(actual === expected, `${actual} !== ${expected}`);
+//   if (actual === expected) {
+//     console.log(`Assertion Passed: ${actual} === ${expected}`);
+//   }
+// };
+
+const assertEqual = require('./assertEqual');
 
 const head = function(subarray) {
   do {return subarray[0]}
@@ -11,6 +13,4 @@ const head = function(subarray) {
 }
 
 
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-console.log(head([]));
+module.exports = head;
