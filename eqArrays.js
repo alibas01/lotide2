@@ -8,22 +8,24 @@ const eqArrays = function(arr1, arr2) {
  
   let booArr = [];
   let sum = 0;
+  if (!arr1 || !arr2 ) {
+    return false;
+  }
+  if (arr1.length === 0 && arr2.length === 0) {
+    return true;
+  }
+  
   if (arr1.length === arr2.length) {
     for (let i = 0; i < arr1.length; i++) {
       if (arr1[i] === arr2[i]) {
-        booArr.push(1);
+        sum +=1;
       } else {
-        booArr.push(0);
+        return false;
       }
     }
-    for (let item of booArr) {
-      sum += item;
-    }
-    if (sum !== arr1.length) {
-      return false;
-    } else {
+      if (sum === arr1.length) {
       return true;
-    }
+    } 
   } else {
     return false;
   }
