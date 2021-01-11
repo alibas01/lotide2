@@ -1,7 +1,3 @@
-// Assert equal function
-
-const assertEqual = require('./assertEqual');
-
 // eqArrays function
 
 const eqArrays = function(arr1, arr2) {

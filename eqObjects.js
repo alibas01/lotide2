@@ -26,7 +26,7 @@ const eqObjects = function(object1, object2) {
       sum += 1
       isequal = false;
     }
-  } if (sum === keys1.length) {
+  } if (sum === keys1.length && sum === keys2.length) {
       keysmatch = true;
   }
   if (keysmatch) {
