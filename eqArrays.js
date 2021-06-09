@@ -1,6 +1,16 @@
 // eqArrays function
 
-const eqArrays = function(arr1, arr2) {
+const eqArrays = function(a, b) {
+  if (a === b) return true;
+  if (a == null || b == null) return false;
+  if (a.length !== b.length) return false;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] !== b[i]) return false;
+  }
+  return true;
+}
+
+const eqArrays2 = function(arr1, arr2) {
  
   let booArr = [];
   let sum = 0;
@@ -28,4 +38,4 @@ const eqArrays = function(arr1, arr2) {
 };
 
 
-module.exports = eqArrays; 
+module.exports = { eqArrays, eqArrays2 }; 
